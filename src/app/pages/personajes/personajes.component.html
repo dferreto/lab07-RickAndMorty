@@ -1,0 +1,25 @@
+<!-- El código que proporcionó es una plantilla HTML que utiliza la directiva estructural de Angular
+`*ngFor` para iterar sobre una matriz de `resultados` y mostrar un componente `mat-card` para cada
+elemento de la matriz. -->
+
+<mat-card class="design-card" *ngFor="let pers of results.results">
+  <mat-card-header>
+    <img class="photo" [src]="pers.image" alt="" />
+    <mat-card-title-group class="Card">
+      <div class="acabado">
+        <div class="name">{{ pers.name }}</div>
+        <div class="info">
+          <p class="tam">
+            Id: {{ pers.id }}, Status: {{ pers.status }}
+          </p>
+          <p>
+           
+          </p>
+          <p>
+            Species:{{ pers.species }}, Gender: {{ pers.gender }}
+          </p>
+        </div>
+      </div>
+    </mat-card-title-group>
+  </mat-card-header>
+</mat-card>
